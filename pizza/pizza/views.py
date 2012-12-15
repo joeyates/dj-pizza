@@ -14,3 +14,8 @@ def pizzas(request):
     }
     return render(request, 'pizza/pizzas.html', context)
 
+def pizza_new(request):
+    context = {
+    }
+    return render(request, 'pizza/pizza-new.html', context)
+
