@@ -1,2 +1,6 @@
 <h1>Aggiungi una pizza</h1>
+<form action="{% url pizza-create %}" method="POST">{% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="crea"/>
+</form>
 
